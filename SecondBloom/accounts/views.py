@@ -1,8 +1,9 @@
 from django.shortcuts import render
+from django.http import HttpResponsePermanentRedirect
 
 # Create your views here.
-def logRegPage(request):
-    return render(request, "registerLogin.html")
+def logInPage(request):
+    return render(request, "login.html")
 
-def checkFunc(request):
-    return render(request, "index.html")
+def registerPage(request):
+    return render(request, "signIn.html")
