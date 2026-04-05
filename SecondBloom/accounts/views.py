@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponsePermanentRedirect
 
 # Create your views here.
+def index(request):
+    return render(request, "index.html")
+
 def logInPage(request):
     return render(request, "login.html")
 
