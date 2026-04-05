@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/front/css/logIn.css">
+        <script src="/front/js/logIn.js" defer></script>
         <title>Регистрация</title>
     </head>
     <body>
@@ -16,24 +17,26 @@
                 <ul class="navigation">
                     <li class="navigation-item"><a id="main" href="#">Главная</a></li>
                     <li class="navigation-item"><a id="QA" href="#">FAQ</a></li>
+                    <li class="navigation-item"><a class="personal-account" href="/front/html/personal-account.html"><img src="/front/img/account.png" alt="Личный кабинет"></a></li>
                 </ul>
             </nav>
-            <a class="personal-account" href="/front/html/personal-account.html"><img src="/front/img/account.png" alt="Личный кабинет"></a>
         </header>
         <main>
-            <section>
-                <p><a class="back" href="#"><img src="/front/img/arrowLeft.png" alt="стрелка назад"> Назад</a></p>
-                <h1>SecondBloom</h1>
-                <form>
-                    <fieldset>
-                        <legend>Вход/регистрация</legend>
-                        <input type="text" placeholder="Логин">
-                        <input type="password" placeholder="Пароль">
-                        <input type="password" placeholder="Подтвердите пароль">
-                        <button type="submit">Регистрация</button>
-                        <p class="logIn">Уже есть аккаунт? <a href="/front/html/logIn.html">Войти</a></p>
-                    </fieldset>
-                </form>
+            <section class="main">
+                <p><a class="back" href="#"><img class="back-img" src="/front/img/arrowLeft.png" alt="стрелка назад" data-hover="/front/img/arrowLeftCream.png"> Назад</a></p>
+                <div class="form">
+                    <h1>SecondBloom</h1>
+                    <form>
+                        <h2>Вход/регистрация</h2>
+                        <div class="input">
+                            <input type="text" placeholder="Логин">
+                            <input type="password" placeholder="Пароль">
+                            <input type="password" placeholder="Подтвердите пароль">
+                            <button type="submit">Регистрация</button>
+                            <p class="logIn">Уже есть аккаунт? <a href="/front/html/logIn.html">Войти</a></p>
+                        </div>
+                    </form>
+                </div>
             </section>
         </main>
     </body>

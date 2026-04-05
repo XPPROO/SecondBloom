@@ -15,9 +15,12 @@ body {
     color: #ffebbb;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 67px;
 }
 
 .logo {
+    margin: 0;
+    padding: 0;
     font-family: "El Messiri", sans-serif;
     font-size: 32px;
     padding: 5px 0px;
@@ -25,9 +28,11 @@ body {
 }
 
 .navigation {
+    margin: 0;
+    padding: 0;
     display: flex;
     gap: 29px;
-    margin-left: 670px;
+    align-items: center;
 }
 
 .navigation-item {
@@ -38,4 +43,88 @@ body {
 .navigation-item a {
     text-decoration: none;
     color: #ffebbb;
+}
+
+.personal-account {
+    margin-left: 70px;
+}
+
+.main {
+    margin: 0 auto;
+    padding:  0 200px;
+    display: flex;
+    gap: 104px;
+}
+
+.back {
+    font-size: 20px;
+    font-weight: 500;
+    border: solid 2px rgba(12, 58, 21, 1);
+    padding: 5px;
+    color: rgba(12, 58, 21, 1);
+    text-decoration: none;
+}
+
+.back:hover {
+    background-color: rgba(12, 58, 21, 1);
+    color: #ffebbb;
+}
+
+.form {
+    text-align: center;
+    width: 686px;
+    margin-bottom: 222px;
+}
+
+h1 {
+    font-family: "El Messiri", sans-serif;
+    color:rgba(12, 58, 21, 1);
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    color: rgba(115, 127, 53, 1);
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.input {
+    border: solid 2px rgba(115, 127, 53, 1);
+    background-color: white;
+    padding: 58px 68px;
+}
+
+input {
+    width: 500px;
+    background-color: white;
+    border: solid 2px rgba(115, 127, 53, 1);
+    padding: 12px 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: rgba(115, 127, 53, 1);
+    border: none;
+    color: white;
+    font-size: 36px;
+    font-weight: 500;
+    padding: 6px 26px;
+    margin-top: 28px;
+    margin-bottom: 20px;
+}
+
+.logIn {
+   font-family: "Inter", sans-serif;
+   color:  rgba(151, 151, 151, 1);
+   font-size: 20px;
+}
+
+.logIn a {
+    color:rgba(115, 127, 53, 1);
+    text-decoration: none;
 }
