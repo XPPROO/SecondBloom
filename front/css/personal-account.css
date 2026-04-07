@@ -1,0 +1,305 @@
+body {
+    background-color: white;
+    font-family: "Advent Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    background-color: #ffebbb;
+    display: flex;
+    padding-left: 73px;
+    padding-right: 156px;
+    color: rgba(12, 58, 21, 1);
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 67px;
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    font-family: "El Messiri", sans-serif;
+    font-size: 32px;
+    padding: 5px 0px;
+    font-weight: 700;
+}
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 29px;
+    align-items: center;
+}
+
+.navigation-item {
+    list-style: none;
+    font-size: 20px;
+}
+
+.navigation-item a {
+    text-decoration: none;
+    color: rgba(12, 58, 21, 1);
+}
+
+.personal-account {
+    margin-left: 70px;
+}
+
+main {
+    margin: 0;
+    padding: 0 200px;
+}
+
+.account {
+    display: flex;
+    text-align: center;
+}
+
+.back {
+    font-size: 20px;
+    font-weight: 500;
+    border: solid 2px rgba(12, 58, 21, 1);
+    padding: 5px;
+    color: rgba(12, 58, 21, 1);
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.back:hover {
+    background-color: rgba(12, 58, 21, 1);
+    color: #ffebbb;
+}
+
+.avatar {
+    display: flex;
+    margin-bottom: 69px;
+}
+
+.avatar img {
+    margin-right: 19px;
+}
+
+.name {
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 55px;
+    margin-right: 420px;
+}
+
+.avatar p {
+    margin-top: 55px;
+}
+
+.exit {
+    color: rgba(84, 16, 15, 1);
+    border: solid 2px rgba(84, 16, 15, 1);
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.exit:hover {
+    background-color: rgba(84, 16, 15, 1);
+    color: #ffebbb;
+}
+
+.add {
+    background-color: rgba(115, 127, 53, 1);
+    color: #ffebbb;
+    font-size: 36px;
+    font-weight: 500;
+    padding: 10px 350px;
+    margin-left: 120px;
+    text-decoration: none;
+}
+
+.like {
+    margin-top: 55px;
+    margin-bottom: 55px;
+    margin-left: 120px;
+    margin-right: 88px;
+}
+
+.my-point {
+    margin-bottom: 55px;
+    margin-left: 120px;
+    margin-right: 88px;
+}
+
+h2 a {
+    color: rgba(84, 16, 15, 1);
+    font-size: 32px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.card {
+    border: solid 2px rgba(35, 62, 69, 1);
+    padding: 12px 21px;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 33px;
+    margin-left: 48px;
+}
+
+.card-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating {
+    display: flex;
+    gap: 18px;
+}
+
+.heart-icon {
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Размер сердечка */
+.heart-icon svg {
+  width: 32px; 
+  height: 32px;
+  
+  /* Начальное состояние: только контур, серый цвет */
+  fill: transparent; 
+  stroke: #808080; 
+  stroke-width: 2px;
+  
+  /* Плавность перехода */
+  transition: all 0.3s ease;
+}
+
+/* Эффект при наведении */
+.heart-icon:hover svg {
+  /* При наведении: полная закраска кремовым цветом */
+  fill: rgba(84, 16, 15, 1);
+  stroke: rgba(84, 16, 15, 1); /* Делаем контур того же цвета, чтобы он исчез */
+}
+
+.rating-block {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer; /* Чтобы было понятно, что можно навести */
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+/* Настройки для звезд */
+.stars svg {
+  width: 32px; /* Размер звезды */
+  height: 32px;
+  fill: #808080; /* Цвет по умолчанию (Серый) */
+  transition: fill 0.3s ease; /* Плавная смена цвета */
+}
+
+/* Текст (общий) */
+.score {
+  margin-left: 10px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* Логика переключения текста */
+.score-hover {
+  display: none; /* Скрываем 5.0 по умолчанию */
+}
+
+/* === ЭФФЕКТ ПРИ НАВЕДЕНИИ (HOVER) === */
+.rating-block:hover .stars svg {
+  fill: #ffebbb; /* Звезды становятся кремовыми */
+}
+
+.rating-block:hover .score-default {
+  display: none; /* Скрываем 0.0 */
+}
+
+.rating-block:hover .score-hover {
+  display: inline; /* Показываем 5.0 */
+}
+
+.card-type-item {
+    margin: 0;
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+.card-type-paper {
+    background-color: #ffebbb;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.card-type-plastic {
+    background-color: rgba(12, 58, 21, 1);
+    padding: 5px 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.card-type-glass {
+    background-color: rgba(84, 16, 15, 1);
+    padding: 5px 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.card-type {
+    margin-bottom: 20px;
+}
+
+.card-place {
+    display: flex;
+    gap: 5px;
+    margin-left: 48px;
+    margin-right: 79px;
+    margin-bottom: 20px;
+}
+
+.card-place p {
+    width: 659px;
+    font-size: 16px;
+}
+
+.card-time {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 48px;
+    margin-right: 79px;
+}
+
+.card-time-work {
+    display: flex;
+    gap: 10px;
+}
+
+.card-p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.card-p p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.more {
+    font-size: 24px;
+    margin: 0;
+    color: rgba(115, 127, 53, 1);
+}
+
+.more p {
+    margin:0;
+}
