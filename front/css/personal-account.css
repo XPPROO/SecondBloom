@@ -199,7 +199,9 @@ h3 {
   width: 32px; /* Размер звезды */
   height: 32px;
   fill: #808080; /* Цвет по умолчанию (Серый) */
-  transition: fill 0.3s ease; /* Плавная смена цвета */
+  transition: fill 0.3s ease; 
+  border: none;
+  background-color: transparent;/* Плавная смена цвета */
 }
 
 /* Текст (общий) */
@@ -302,4 +304,54 @@ h3 {
 
 .more p {
     margin:0;
+}
+
+.heart-icon {
+    border: none;
+    background-color: transparent;
+}
+
+/* Кнопки-звёзды без рамок */
+.star-btn {
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    padding: 0;
+    margin: 0 2px;
+    cursor: pointer;
+    display: inline-flex;
+    transition: transform 0.15s;
+}
+.star-btn:hover {
+    transform: scale(1.1);
+}
+
+/* SVG звёзды без рамок и фона */
+.star-svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    fill: #E0E0E0;
+    transition: fill 0.1s;
+}
+
+/* Закрашенная звезда */
+.star-svg.filled {
+    fill: #F4E2B6;
+}
+
+/* Hover-эффект для интерактивных звёзд */
+.star-btn:hover .star-svg,
+.star-btn:hover ~ .star-btn .star-svg {
+    fill: #F4E2B6;
+}
+
+/* Для неинтерактивных звёзд (каталог) */
+.stars svg.star-svg {
+    background: transparent !important;
+    border: none !important;
 }
